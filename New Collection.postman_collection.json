@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "fbfc35de-15b8-4a4e-b7fa-9fc3d452c0d3",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsertProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productname\":\"chickenleg\",\r\n    \"companyname\":\"Mumbra\",\r\n    \"rate\":122\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/product?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":2,\r\n    \"productname\":\"BiscuitButter\",\r\n    \"companyname\":\"bhuvaneshwar\",\r\n    \"rate\":178\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/product?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/products?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/product/4?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						"4"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/product/5?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"product",
+						"5"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoidXNlcm5tIiwiZXhwIjoxNjI1OTIyNDgwfQ.tg6sqiTVI0pHXoQBnDnAo8k4-lWK0N_DzpLhso3ZYEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AccesstokenAPI",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "usernm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Contra\",\r\n    \"password\":\"secret\"\r\n  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

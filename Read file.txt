@@ -1,0 +1,3 @@
+Hi,
+
+Product list Insert, Update, Delete, Fetch All API are mentioned in Json form simply import in Postman.
